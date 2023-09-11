@@ -4,17 +4,17 @@ import Footer from "../common/Footer";
 
 // const[mode, setmode] = useState("light")
 
-const WithLayout = (Component) => () => {
+const WithLayout = (Component) => (props) => {
   // const[mode, setmode] = useState("light")
-
+ 
   return (
     <>
       <Navigation />
       <Component />
-      <Footer />
+      <Footer/>
     </>
-  )
 
+  )
 }
 
 export default WithLayout;

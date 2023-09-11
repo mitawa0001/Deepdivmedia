@@ -1,4 +1,6 @@
 import WithLayout from "../templates/Layout";
+// import ProductList from "./ProductList";
+
 import sleep_dog from "../../assest/dog-sleep.png";
 
 import shadow_logoo from "../../assest/Layer_456.png";
@@ -6,18 +8,19 @@ import shadow_logoo1 from "../../assest/Layer 2 copy 2.png";
 import half_logoo from "../../assest/half-circle-22.png";
 import pet11 from "../../assest/pet_11-removebg-preview.png";
 
-
-
-
 const Home = (props) => {
     return (
         <>
-           
-            <div className={`bg-${props.mode}`}>
-                
-
+            <div className="switch">
+                <div className="form-check form-switch">
+                    <input className="form-check-input" onClick={props.toogleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label" htmlfor="flexSwitchCheckDefault"></label>
+                </div>
+               
             </div>
 
+
+            <div className={`bg-${props.mode}`}>
             <div className="backgroung-img-2">
                 <div class="header-content-area">
                     <div class="container">
@@ -151,7 +154,8 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
-
+                {/* <ProductList title="Product List" /> */}
+            </div>
 
         </>
     );
