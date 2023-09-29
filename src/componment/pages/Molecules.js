@@ -1,7 +1,7 @@
 import Capitalize from "../molecules/Capitalize";
 import WithLayout from "../templates/Layout";
 
-const Molecules = () => {
+const Molecules = (props) => {
     return (
         <Capitalize title="Capitilize Here..."/>
     );

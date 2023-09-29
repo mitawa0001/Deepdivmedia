@@ -12,7 +12,6 @@ const Studentdata = () => {
         setstudentdata(resp);
         console.log(resp);
       })
-      
   }, []);
 
   return (
@@ -33,7 +32,7 @@ const Studentdata = () => {
                       <button className="btn btn-success">Add</button>
                     </Link>
 
-                    
+
                     {/* <button className="btn btn-success">Back</button> */}
 
                   </div>

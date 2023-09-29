@@ -1,0 +1,115 @@
+ .overlay{
+    background-color: rgb(188, 162, 162);
+    cursor: not-allowed;
+    z-index: 999;
+ }
+ .small-title{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6.1875rem;
+    color: #b5a46d;
+    background-color: rgba(181, 164, 109, 0.1);
+ }
+ .hide{
+    display: none;
+ }
+ 
+ .about-pop-up-wraper-show{
+   display: block;
+   position: fixed;
+   display: flex;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 999;
+   background: #e1e1e15c;
+   height: 100%;
+   width: 100%;
+ }
+ .about-pop-up-wrap-show{
+    position: relative;
+    height: 200px;
+    width: 200px;
+
+ }
+ .about-pop-up-wrap{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+ }
+ .close{
+  
+    top: -20px;
+    right: 0px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: blue;
+ }
+ 
+ .chef-profile-img{
+   height: 64px;
+   width: 64px;
+ }
+
+ /* Booking Wrapper  */
+ .booking-wrap-left{
+   background-color: #f9f5ec;
+ }
+ .booking-card-container{
+   border: 1px solid rgba(0, 0, 0, .1);
+   height: 100%;
+   width: 100%;
+   text-align: center;
+  
+ }
+ .booking-container-img{
+   height: 6rem;
+   width: 6rem;
+ }
+/* Customer Review start */
+
+.review-container-wraper{
+   background-image: url("../../assest/customer-review-bg-img.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   padding: 7rem 0rem;
+   position: relative;
+}
+.review-container-wraper::before{
+       background-repeat: repeat-x;
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 0;
+       width: 100%;
+       height: 100%;
+       content: "";
+       background-color: #eee;
+       opacity: 0.2;
+}
+.carousel-item{
+   padding: 3rem 0rem;
+   border: 1px solid #717171;
+}
+/* carousels start */
+.carousel-indicators {
+   display: none;
+}
+.carousel-control-prev {
+   left: -25%;
+}
+.carousel-control-next{
+right: -25%;
+}
+ @media screen and (min-width: 600px) {
+
+ }
+  
