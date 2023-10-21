@@ -1,6 +1,10 @@
 /* body{
   font-family: "Meteoric" !important;
 } */
+/* header */
+.navbar-brand{
+ width: 4rem;
+}
 .form-switch .form-check-input {
   width: 2.8em !important;
 }
@@ -61,6 +65,7 @@
   margin-bottom: 10px;
   font-weight: 900;
 }
+
 p {
   margin: 0;
   font-family: "Meteoric";
@@ -193,6 +198,10 @@ a {
   text-transform: capitalize;
   display: inline-block;
   border: 0px !important;
+}
+/* footer */
+.current >img {
+  width: 7rem;
 }
 footer p {
   margin: 0;

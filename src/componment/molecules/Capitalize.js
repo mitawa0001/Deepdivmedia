@@ -39,7 +39,6 @@ const Capitalize = (props) => {
         SetTextHere(LowerCase)
     }
     const handleOnChange = (e) => {
-
         SetTextHere(e.target.value)
     }
     const handleClear = () => {
@@ -49,7 +48,17 @@ const Capitalize = (props) => {
     const handleFirst = () => {
         const firstLetters = split.map(word => word.charAt(0));
         setLetters(firstLetters);
-        console.log(firstLetters);
+
+    };
+
+    const handleReverse = () => {
+        let Reverse = [...TextHere].reverse().join("");
+        SetTextHere(Reverse)
+
+    };
+    const handleLastWord = () => {
+        let LastWord = TextHere.split(" ",4);
+        SetTextHere(LastWord);
     };
 
 
@@ -66,6 +75,9 @@ const Capitalize = (props) => {
                 <button className="btn btn-primary mt-3 mx-2" onClick={handleCapitilize}>Capitilize</button>
                 <button className="btn btn-danger mt-3 mx-2" onClick={handleClear}>Clear</button>
                 <button className="btn btn-primary mt-3 mx-2" onClick={handleFirst}>First Index</button>
+                <button className="btn btn-secondary mt-3 mx-2" onClick={handleReverse}>Reverse </button>
+                <button className="btn btn-warning mt-3 mx-2" onClick={handleLastWord}> LastWord</button>
+
 
             </div>
             {/* <ul>

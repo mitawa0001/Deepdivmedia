@@ -6,7 +6,7 @@ const Capitalize = React.lazy(() => import('./componment/molecules/Capitalize'))
 const Home = React.lazy(() => import('./componment/pages/Home'));
 const DarkTheme = React.lazy(() => import('./componment/molecules/DarkTheme'));
 const ThemeforestHome = React.lazy(() => import('./containers/ThemeForestHome'));
-const ThemeForestMenu = React.lazy(() => import('./containers/ThemeForestMenu'));
+const ThemeForestMenu = React.lazy(() => import('./containers/ThemeForestBlog'));
 
 
 function App() {

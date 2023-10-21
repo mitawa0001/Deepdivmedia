@@ -8,10 +8,10 @@ const Reservation = () => {
                     <div className="col-lg-6 col-sm-12 pt-5 booking-wrap-left">
                         <div className="d-flex flex-column justify-content-center booking-card-container align-items-center p-5">
                                 <img className="booking-container-img" src={Serving_Dish_svg} alt="serving dish svg" height="100%" width="100%"></img>
-                                <h2 className="text-capitalize py-2">make a reservation uishdfkubdsf dsfhdjkbgdf hdfgnjkdnfg jidfgnjkdfgkj</h2>
-                                <p>Opens 8:00 AM - 10:00 PM, every day of the week Opens 8:00 AM - 10:00 PM, every day of the week Opens 8:00 AM - 10:00 PM, every day of the week Opens 8:00 AM - 10:00 PM, every day of the week Opens 8:00 AM - 10:00 PM, every day of the week Opens 8:00 AM - 10:00 PM, every day of the weekv</p>
-                                <button className="btn btn-green">book a table</button>
-                                <button className="btn btn-red">Cancel</button>
+                                <h2 className="text-capitalize py-2">make a reservation </h2>
+                                <p>Opens 8:00 AM - 10:00 PM, every day of the week </p>
+                                <button className="btn btn-primary">book a table</button>
+                               
                         </div>
                     </div>
                     <div className="col-lg-6 col-sm-12 ps-2">

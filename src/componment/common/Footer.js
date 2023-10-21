@@ -1,5 +1,5 @@
 import React from "react";
-import logo_new from "../../assest/logo.png";
+import logo_new from "../../assest/logo-light.svg";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -30,7 +30,7 @@ const Footer = () => {
                                 </h3>
                                 <div class="footer-logo">
                                     <Link class="current py-5 my-5" to="/">
-                                        <img src={logo_new} style={{ width: "250px" }} alt=""></img>
+                                        <img src={logo_new} alt="footer logo white"></img>
                                     </Link>
                                     <p>We specialize in creating tailored solutions for all who strives for tech, leaving a lasting imprint on your journey to success.</p>
                                 </div>

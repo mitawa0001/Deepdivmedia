@@ -1,8 +1,9 @@
 import { Container, Row } from "react-bootstrap";
 import tomato_cheese_pasta from "../../assest/tomato cheese pasta.jpg";
 import { TodaysDish } from "../../componment/common/TodaysDish";
+import React from "react";
 
-const Specials = () => {
+const Specials = React.memo((showPopup) => {
 // const dishProps = {
 //     heading : 'Specials',
 //     parahs:'hgvbhjk', 
@@ -22,12 +23,12 @@ const Specials = () => {
                 {/*content end */}
                     <Row className="text-center no-gutters shadow-lg rounded mb-5">
                         <div className="d-flex col-lg-6 col-sm-12 px-0 ">
-                            <div className="col-lg-6 col-sm-6 p-4 text-center">
+                            <div className="col-lg-6 col-md-6 col-sm-6 p-4 text-center">
                                 <h4>Tomato Cheese Pasta</h4>
                                 <p>Mango, Passion Fruit, Pineapple and Coconut All Blended with Ice.</p>
                                 <button className="btn text-uppercase ">view full menu</button>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6">
                                 <img src={tomato_cheese_pasta} alt="tomato chesse pasta" height="100%"  width="100%"></img>
                             </div>
                         </div>
@@ -69,5 +70,7 @@ const Specials = () => {
                 </Container>
             </section>
     )
-};
+});
+
+
 export default Specials;
