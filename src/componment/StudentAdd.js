@@ -3,7 +3,7 @@ import { json } from "react-router";
 
 const handalSubmit = (e) => {
   e.preventDefault();
-  
+
   // useEffect(() => {
   //   fetch("https://redjuice-api.onrender.com/api/v1")
   //   .then((resp)=>{
@@ -12,6 +12,12 @@ const handalSubmit = (e) => {
   //   })
   // });
 };
+
+
+
+
+
+
 
 const StudentAdd = () => {
   const [name, namechanged] = useState("");

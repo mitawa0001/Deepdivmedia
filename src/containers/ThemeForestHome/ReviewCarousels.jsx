@@ -27,7 +27,7 @@ const ReviewCarousels = () => {
                 )
             })
         } */}
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel activeIndex={index} onSelect={handleSelect} >
                 
             <Carousel.Item>
                 <h3>Third slide label</h3>

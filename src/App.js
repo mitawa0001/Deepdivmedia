@@ -7,16 +7,19 @@ const Home = React.lazy(() => import('./componment/pages/Home'));
 const DarkTheme = React.lazy(() => import('./componment/molecules/DarkTheme'));
 const ThemeforestHome = React.lazy(() => import('./containers/ThemeForestHome'));
 const ThemeForestMenu = React.lazy(() => import('./containers/ThemeForestBlog'));
+const Theme = React.lazy(() => import('./componment/common/Header'));
+const ReduxSample = React.lazy(() => import('./containers/ReduxSample/index'));
 
 
-function App() {
+const App = () => {
   const [mode, setmode] = useState("light");
   const [text, settext] = useState("context");
 
   const toogleMode = () => {
-    if (mode === "light" ) {
+    if (mode === "light") {
       setmode("dark")
     }
+
     if (text === "content") {
       settext("white")
     }
@@ -37,6 +40,8 @@ function App() {
             <Route exect path="darktheme" element={<DarkTheme title="Dark mode" mode={mode} toogleMode={toogleMode} />} />
             <Route exect path="themeforesthome" element={<ThemeforestHome title="Dark mode" mode={mode} toogleMode={toogleMode} />} />
             <Route exect path="themeforestmenu" element={<ThemeForestMenu title="Dark mode" mode={mode} toogleMode={toogleMode} />} />
+            <Route exect path="theme" element={<Theme/>} />
+            <Route exect path="Reduxsample" element={<ReduxSample/>} />
           </Routes>
         </Suspense>
       </BrowserRouter>

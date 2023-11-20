@@ -8,8 +8,6 @@ import half_logoo from "../../assest/half-circle-22.png";
 import pet11 from "../../assest/pet_11-removebg-preview.png";
 
 const Home = (props) => {
-    // console.log(props,"home props")
-
     return (
         <>
             <div className="switch fixed">
@@ -55,7 +53,7 @@ const Home = (props) => {
                                             {/* <img src={technology} alt="" ></img> */}
 
                                             <div className="layer-3 ">
-                                                                                                <img src="img/spin.png" alt=""></img>
+                                                <img src="img/spin.png" alt=""></img>
                                             </div>
                                         </div>
                                     </div>

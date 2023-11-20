@@ -1,9 +1,9 @@
 import "../ThemeForestBlog/style.scss";
 
-import blog_dish from "../../assest/4.jpg";
+// import blog_dish from "../../assest/4.jpg";
 import { Row } from "react-bootstrap";
 import chefimg from "../../assest/chef_profile.jpg";
-import data from "../ThemeForestHome/Data"
+import data from "../ThemeForestHome/Data";
 
 const BLogFull = () => {
     return (

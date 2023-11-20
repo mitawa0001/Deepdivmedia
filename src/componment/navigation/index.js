@@ -18,6 +18,7 @@ const Navigation = (props) => {
             setlight("bg-light")
         }
     }
+
     return (
         <>
             <Navbar expand="lg" className={`navbar sticky-top navbar-expand-lg ${light}`}>
@@ -49,7 +50,12 @@ const Navigation = (props) => {
                                 <NavDropdown.Item>
                                     <Link className='nav-link' to="/themeforestmenu">ThemeforestMenu</Link>
                                 </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link className='nav-link' to="/theme">themeforestHomeHeader</Link>
+                                </NavDropdown.Item>
                             </NavDropdown>
+                            <Link className='nav-link' to="/Reduxsample">Reduxsample</Link>
+
                         </Nav>
                         <Form className="d-flex">
                             <div className="switch">

@@ -51,7 +51,7 @@ const ProductList = (props) => {
     }, [])
 
 
-
+    
 
 
     // useEffect(() => {
@@ -73,8 +73,6 @@ const ProductList = (props) => {
 
     return (
         <>
-
-
             <div className="container">
                 <h2 className="text-center">{props.title}</h2>
                 {myError !== "" && <h2 className="text-center">{myError}</h2>}
@@ -98,6 +96,9 @@ const ProductList = (props) => {
                     })}
                 </div>
             </div>
+            {/* <img src="dfgd" alt="this is a car image so content  sfxdgdfxgvdx dxg d" height={20px} width=""> */}
+
+            </img>
 
 
             {/* <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
