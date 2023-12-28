@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import tomato_cheese_pasta from "../../assest/tomato cheese pasta.jpg";
-import { TodaysDish } from "../../componment/common/TodaysDish";
+// import { TodaysDish } from "../../componment/common/TodaysDish";
 import React from "react";
 
 const Specials = React.memo((showPopup) => {

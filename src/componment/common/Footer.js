@@ -21,7 +21,7 @@ const Footer = () => {
     return (
         <>
             <section id="footer-fixed">
-                <div class="big-footer">
+                <div className="big-footer">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">

@@ -93,12 +93,15 @@ p {
   z-index: 99999994;
 }
 .text-right {
-  text-align: right!important;
+  text-align: right !important;
 }
 .about-section-title h2 {
   color: #1373a6;
   font-weight: bold;
   font-family: "Meteoric";
+}
+h2{
+  color: #1373a6 !important;
 }
 section#about\ bg-circle {
   width: 100%;

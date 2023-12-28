@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "../navigation";
 import Footer from "../common/Footer";
 
 
 const WithLayout = (Component) => (props) => {
-  console.log(props,"layout props")
+  // console.log(props,"layout props")
 
   return (
     <>
