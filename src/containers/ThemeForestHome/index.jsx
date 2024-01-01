@@ -9,7 +9,8 @@ import OurMenu from "./OurMenu";
 import DishesImages from "./DishesImages";
 import BookTable from "./BookTable";
 import MasterChefStory from "./MasterChefStory";
-import ThemeFirstSection from "../../componment/common/ThemeFirstSection";
+// import ThemeFirstSection from "../../componment/common/ThemeFirstSection";
+import HomeSlider from "../../componment/common/HomeSlider";
 
 
 const ThemeForestHome = () => {
@@ -46,7 +47,8 @@ const ThemeForestHome = () => {
     // console.log(showPopup)
     return (
         <>
-            <ThemeFirstSection/>
+            <HomeSlider />
+            {/* <ThemeFirstSection/> */}
             <MasterChefStory clickMeHandler={clickMeHandler} popUpCloseHandler={popUpCloseHandler} showPopup={showPopup} />
             <Reservation />
             <TodaysDish />
