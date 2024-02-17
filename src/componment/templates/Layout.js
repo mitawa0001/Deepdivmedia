@@ -8,10 +8,9 @@ const WithLayout = (Component) => (props) => {
 
   return (
     <>
-     
       <Navigation />
-      <Component {...props}/>
-      <Footer  />
+      <Component {...props} />
+      <Footer />
     </>
 
   )

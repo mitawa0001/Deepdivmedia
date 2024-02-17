@@ -6,8 +6,10 @@ const Home = React.lazy(() => import('./containers/ThemeForestHome'));
 const Capitalize = React.lazy(() => import('./componment/molecules/Capitalize'));
 const DarkTheme = React.lazy(() => import('./componment/molecules/DarkTheme'));
 const ThemeforestBlog = React.lazy(() => import('./containers/ThemeForestBlog'));
+const ThemeforestContact = React.lazy(() => import('./containers/ThemeForestContact'));
 const Theme = React.lazy(() => import('./componment/common/Header'));
 const ReduxSample = React.lazy(() => import('./containers/ReduxSample/index'));
+const FormNew = React.lazy(() => import('./componment/common/FormNew'));
 
 
 const App = () => {
@@ -38,8 +40,10 @@ const App = () => {
             <Route exect path="capitilize" element={<Capitalize mode={mode} toogleMode={toogleMode} />} />
             <Route exect path="darktheme" element={<DarkTheme title="Dark mode" mode={mode} toogleMode={toogleMode} />} />
             <Route exect path="themeforestblog" element={<ThemeforestBlog title="Dark mode" mode={mode} toogleMode={toogleMode} />} />
+            <Route exect path="themeforestcontact" element={<ThemeforestContact title="Dark mode" mode={mode} toogleMode={toogleMode} />} />
             <Route exect path="theme" element={<Theme />} />
             <Route exect path="Reduxsample" element={<ReduxSample />} />
+            <Route exect path="formNew" element={<FormNew/>} />
           </Routes>
         </Suspense>
       </BrowserRouter>

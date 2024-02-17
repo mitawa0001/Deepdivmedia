@@ -34,9 +34,10 @@ const Navigation = (props) => {
                         >
                             <Link className='nav-link' to="/">home</Link>
                             <Link className='nav-link' to="/">about</Link>
-                            <Link className='nav-link' to="/">contact</Link>
+                            <Link className='nav-link' to="/themeforestcontact">contact</Link>
                             <Link className='nav-link' to="/themeforestblog">blog</Link>
                             <Link className='nav-link' to="/Reduxsample">User List</Link>
+                            <Link className='nav-link' to="/formNew">Form</Link>
                         </Nav>
                         <Form className="d-flex">
                             {/* <NavDropdown className='' title="Feature" id="navbarScrollingDropdown">
