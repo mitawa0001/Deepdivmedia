@@ -10,6 +10,8 @@ const ThemeforestContact = React.lazy(() => import('./containers/ThemeForestCont
 const Theme = React.lazy(() => import('./componment/common/Header'));
 const ReduxSample = React.lazy(() => import('./containers/ReduxSample/index'));
 const FormNew = React.lazy(() => import('./componment/common/FormNew'));
+const Blog = React.lazy(() => import('./containers/Blog'));
+const SingleBlog = React.lazy(() => import('./containers/Blog/SingleBlog'));
 
 
 const App = () => {
@@ -44,6 +46,10 @@ const App = () => {
             <Route exect path="theme" element={<Theme />} />
             <Route exect path="Reduxsample" element={<ReduxSample />} />
             <Route exect path="formNew" element={<FormNew/>} />
+
+            <Route exect path="blog" element={<Blog/>} />
+            <Route path="products/:productId" element={<SingleBlog />} />
+
           </Routes>
         </Suspense>
       </BrowserRouter>
