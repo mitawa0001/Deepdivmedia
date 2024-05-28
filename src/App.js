@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { Suspense, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductList from "./componment/pages/ProductList";
 
 const Home = React.lazy(() => import('./containers/ThemeForestHome'));
 const Capitalize = React.lazy(() => import('./componment/molecules/Capitalize'));
@@ -46,6 +47,7 @@ const App = () => {
             <Route exect path="theme" element={<Theme />} />
             <Route exect path="Reduxsample" element={<ReduxSample />} />
             <Route exect path="formNew" element={<FormNew/>} />
+            <Route exect path="pro" element={<ProductList/>} />
 
             <Route exect path="blog" element={<Blog/>} />
             <Route path="products/:productId" element={<SingleBlog />} />

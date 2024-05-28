@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import API from "../../api";
+import WithLayout from "../templates/Layout";
 
-
+// import axios from "axios"
 
 const ProductList = (props) => {
     const [myData, setNewData] = useState([]);
@@ -35,20 +36,20 @@ const ProductList = (props) => {
 
     // const API = "https://api.pujakaitem.com/api"
 
-    const GetApiWithError =  async() => {
-        try {
-            const res = await API.get("/products");
-            setNewData(res.data);
-            console.log(res)
-        }
-        catch (error) {
-            setMyError(error.message)
-        }
-    }
+    // const GetApiWithError =  async() => {
+    //     try {
+    //         const res = await API.get("https://api.pujakaitem.com/api/products");
+    //         setNewData(res.data);
+    //         console.log(res)
+    //     }
+    //     catch (error) {
+    //         setMyError(error.message)
+    //     }
+    // }
 
-    useEffect(() => {
-        GetApiWithError();
-    }, [])
+    // useEffect(() => {
+    //     GetApiWithError();
+    // }, [])
 
 
     
@@ -98,7 +99,7 @@ const ProductList = (props) => {
             </div>
             {/* <img src="dfgd" alt="this is a car image so content  sfxdgdfxgvdx dxg d" height={20px} width=""> */}
 
-            </img>
+            {/* </img> */}
 
 
             {/* <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -129,4 +130,4 @@ ProductList.defaultProps = {
     company: "Default Name"
 }
 
-export default ProductList;
+export default WithLayout(ProductList);
